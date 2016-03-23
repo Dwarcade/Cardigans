@@ -10,4 +10,4 @@ submit issues on the issues tab above to keep track of everything that is 'todo'
 pull requests are submitted and then must be reviewed/merged by an admin of the repo.  it is the admin's duty to check non-admin code.
 
 
-Current admins are Scavenge and GADoyle
+Current admins are Scavenge and GeorgeADoyle
