@@ -114,6 +114,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	PAINTSTRUCT ps;
 	HDC hdc;
 	TCHAR greeting[] = _T("Hello, World!");
+	TCHAR extra[] = _T("Nutbutter");
 
 	switch (message)
 	{
@@ -126,6 +127,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		TextOut(hdc,
 			5, 5,
 			greeting, _tcslen(greeting));
+
+		TextOut(hdc,
+			150, 5,
+			extra, _tcslen(extra));
 		// End application-specific layout section.
 
 		EndPaint(hWnd, &ps);

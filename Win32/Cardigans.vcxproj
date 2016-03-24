@@ -13,6 +13,16 @@
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Cardigans.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\cardigan_icon.bmp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EB476B37-38E0-40E5-BB74-FC7B78B3DCFE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>

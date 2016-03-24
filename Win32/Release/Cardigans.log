@@ -1,0 +1,14 @@
+﻿Build started 3/23/2016 9:34:06 PM.
+     1>Project "C:\Users\Kevin Williams\Documents\cardigans\Cardigans\Cardigans\Win32\Cardigans.vcxproj" on node 2 (Build target(s)).
+     1>ResourceCompile:
+         C:\Program Files\Windows Kits\8.1\bin\x86\rc.exe /l"0x0409" /nologo /fo"Release\Cardigans.res" Cardigans.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kevin Williams\Documents\cardigans\Cardigans\Cardigans\Win32\Release\Cardigans.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kevin Williams\Documents\cardigans\Cardigans\Cardigans\Win32\Release\Cardigans.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kevin Williams\Documents\cardigans\Cardigans\Cardigans\Win32\Release\Cardigans.lib" /MACHINE:X86 /SAFESEH Release\Cardigans.res
+         Release\main.obj
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
+         Cardigans.vcxproj -> C:\Users\Kevin Williams\Documents\cardigans\Cardigans\Cardigans\Win32\Release\Cardigans.exe
+     1>Done Building Project "C:\Users\Kevin Williams\Documents\cardigans\Cardigans\Cardigans\Win32\Cardigans.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.39
