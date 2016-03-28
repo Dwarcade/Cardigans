@@ -114,8 +114,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	PAINTSTRUCT ps;
 	HDC hdc;
 	TCHAR greeting[] = _T("Hello, World!");
-	TCHAR extra[] = _T("Nutbutter is the beginning of life.  It is the essence of what creates a rit between creation and emptiness.  Frank Sinatra plays a landlord music concert with a DJ.  My mom does want it her way.  She was singing it when we were driving on vacation. So that made sense.  It's so annoying it's like stranger's in the night exchanging glances.");
-
+	LPCWSTR extra = L"Nutbutter is the beginning of life.  \r It is the essence of what creates a rit between creation and emptiness. \n\r Frank Sinatra plays a landlord music concert with a DJ. \r My mom does want it her way.  She was singing it when we were driving on vacation.\n\r So that made sense.  It's so annoying it's like \n stranger's in the night exchanging glances.";
+	RECT rect;
+	HDC wdc = GetWindowDC(hWnd);
+	
 	switch (message)
 	{
 	case WM_PAINT:
@@ -124,21 +126,29 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		// Here your application is laid out.
 		// For this introduction, we just print out "Hello, World!"
 		// in the top left corner.
-		TextOut(hdc,
-			5, 5,
-			greeting, _tcslen(greeting));
+		
 
-		TextOut(hdc,
-			150, 5,
-			extra, _tcslen(extra));
+		
+		
+		SetTextColor(wdc, 0x00000000);
+		SetBkMode(wdc, BS_SOLID);
+		rect.left = 20;
+		rect.top = 30;
+		rect.right = 3080;
+		rect.bottom = 1000;
+
+		DrawText(wdc, extra, -1, &rect, DT_INTERNAL | DT_INTERNAL);
 		// End application-specific layout section.
-
+		
 		EndPaint(hWnd, &ps);
 		break;
 	case WM_DESTROY:
+		
 		PostQuitMessage(0);
+
 		break;
 	default:
+		
 		return DefWindowProc(hWnd, message, wParam, lParam);
 		break;
 	}
