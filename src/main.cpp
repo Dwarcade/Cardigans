@@ -114,7 +114,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	PAINTSTRUCT ps;
 	HDC hdc;
 	TCHAR greeting[] = _T("Hello, World!");
-	TCHAR extra[] = _T("Nutbutter");
+	TCHAR extra[] = _T("Nutbutter is the beginning of life.  It is the essence of what creates a rit between creation and emptiness.  Frank Sinatra plays a landlord music concert with a DJ.  My mom does want it her way.  She was singing it when we were driving on vacation. So that made sense.  It's so annoying it's like stranger's in the night exchanging glances.");
 
 	switch (message)
 	{
